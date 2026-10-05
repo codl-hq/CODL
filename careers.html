@@ -350,6 +350,11 @@ function fieldValue(field) {
 }
 
 function submitEmailFallback(form) {
+  if (form.dataset.trackForm === "career_application") {
+    const messages = {"en":"Your application could not be submitted. Please try this form again later. The project phone, WhatsApp and email are reserved for client inquiries.","ar":"تعذر إرسال طلب التوظيف. يرجى إعادة المحاولة من خلال هذا النموذج لاحقاً. هاتف المشاريع وواتساب والبريد الإلكتروني مخصصة لاستفسارات العملاء.","fr":"Votre candidature n'a pas pu être envoyée. Veuillez réessayer ce formulaire plus tard. Le téléphone, WhatsApp et l'adresse email des projets sont réservés aux demandes des clients.","it":"Non è stato possibile inviare la candidatura. Riprova questo modulo più tardi. Il telefono, WhatsApp e l'email dei progetti sono riservati alle richieste dei clienti.","es":"No se pudo enviar tu candidatura. Vuelve a intentar este formulario más tarde. El teléfono, WhatsApp y el correo de proyectos están reservados para consultas de clientes.","ru":"Не удалось отправить заявку. Повторите попытку через эту форму позже. Телефон, WhatsApp и электронная почта для проектов предназначены для обращений клиентов.","ja":"応募を送信できませんでした。後ほどこのフォームから再度お試しください。プロジェクト用の電話、WhatsApp、メールはお客様からのお問い合わせ専用です。","ko":"지원서를 제출하지 못했습니다. 나중에 이 양식으로 다시 시도해 주세요. 프로젝트 전화, WhatsApp 및 이메일은 고객 문의 전용입니다.","th":"ไม่สามารถส่งใบสมัครได้ โปรดลองใช้แบบฟอร์มนี้อีกครั้งในภายหลัง โทรศัพท์ WhatsApp และอีเมลสำหรับโครงการสงวนไว้สำหรับการสอบถามของลูกค้า","zh-CN":"您的求职申请未能提交。请稍后通过此表格重试。项目电话、WhatsApp和电子邮箱仅供客户咨询使用。"};
+    window.alert(messages[currentLanguage()] || messages.en);
+    return;
+  }
   const subjectField = form.querySelector('input[name="_subject"]');
   const subject = subjectField && subjectField.value ? subjectField.value : "New DesertScape inquiry";
   const emailEndpoint = "mailto:projects%40desertscapeco.com";
@@ -614,7 +619,7 @@ rememberAdsAttribution();
           <img src="/assets/desertscape-logo-horizontal-640.png" alt="DesertScape Landscape Company" width="640" height="200">
         </a>
         <nav class="site-nav" aria-label="Primary navigation">
-          <a  href="/">Home</a><a  href="/about">About</a><a  href="/services">Services</a><a  href="/elements">Elements</a><a  href="/projects">Projects</a><a  href="/vendors">Vendors</a><a aria-current="page" href="/careers">Careers</a><a  href="/contact">Contact</a>
+          <a  href="/">Home</a><a  href="/about">About</a><a  href="/services">Services</a><a  href="/elements">Elements</a><a  href="/projects">Projects</a><a  href="/vendors">Vendors</a><a  href="/contact">Contact</a>
         </nav>
       </div>
     </header>
@@ -622,12 +627,12 @@ rememberAdsAttribution();
       <section class="page-hero">
         <p class="eyebrow">Careers</p>
         <h1>Careers</h1>
-        <p>DesertScape Co is building a team for design, construction, supply, operation, and maintenance of Saudi landscape projects.</p>
+        <p>Career profiles are reviewed when a suitable role or project requirement becomes available.</p>
       </section>
       <section class="section"><figure class="banner-panel" tabindex="0">
     <img class="banner-surface" src="/assets/visual-team-private-resort-construction.jpg" alt="DesertScape team reviewing a landscape construction project" srcset="/assets/responsive/visual-team-private-resort-construction-480.jpg 480w, /assets/responsive/visual-team-private-resort-construction-720.jpg 720w, /assets/responsive/visual-team-private-resort-construction-1200.jpg 1200w, /assets/responsive/visual-team-private-resort-construction-1600.jpg 1600w" sizes="(max-width: 680px) calc(100vw - 28px), min(100vw - 70px, 1200px)" loading="eager" decoding="async" fetchpriority="high">
   </figure></section>
-      <section class="section split"><div><h2>Submit your profile for current and future opportunities.</h2><p>We welcome career interest from qualified professionals, specialists, supervisors, technicians, operators, administrators, and support teams across all landscape, construction, supply, operations, maintenance, commercial, and corporate functions.</p></div><div><p>Use the form below to share your details. Shortlisted candidates may be contacted when a suitable role or project requirement is available.</p></div></section>
+      <section class="section split"><div><h2>Submit your profile for future opportunities.</h2><p>We welcome career interest from qualified professionals, specialists, supervisors, technicians, operators, administrators, and support teams across all landscape, construction, supply, operations, maintenance, commercial, and corporate functions.</p></div><div><p class="career-routing-notice">Applications are accepted through this form only. The project phone, WhatsApp and email are reserved for client inquiries.</p><p>Use the form below to share your details. Shortlisted candidates may be contacted when a suitable role or project requirement is available.</p></div></section>
       <section class="section grey-section">
         <div class="section-title">
           <h2>Career application.</h2>

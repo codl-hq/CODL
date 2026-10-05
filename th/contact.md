@@ -15,7 +15,7 @@ generator: "scripts/build-agent-markdown.py"
 
 # ติดต่อเรา
 
-ติดต่อ DesertScape Co สำหรับโครงการ ผู้ขาย อาชีพ และความร่วมมือ
+ติดต่อ DesertScape สำหรับโครงการภูมิทัศน์
 
 ![สอบถามโครงการ](https://www.desertscapeco.com/assets/visual-company-trust-riyadh.jpg)
 

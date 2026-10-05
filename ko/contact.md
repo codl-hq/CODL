@@ -15,7 +15,7 @@ generator: "scripts/build-agent-markdown.py"
 
 # 문의하기
 
-프로젝트, 공급업체, 경력 및 파트너십에 대해 알아보려면 DesertScape Co에 문의하세요.
+조경 프로젝트에 관해 DesertScape에 문의하세요
 
 ![프로젝트 문의](https://www.desertscapeco.com/assets/visual-company-trust-riyadh.jpg)
 

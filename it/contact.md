@@ -15,7 +15,7 @@ Contatto
 
 # Contattaci
 
-Mettiti in contatto con DesertScape Co per progetti, fornitori, carriere e partnership.
+Contatta DesertScape per progetti paesaggistici
 
 ![Richieste di progetto](https://www.desertscapeco.com/assets/visual-company-trust-riyadh.jpg)
 

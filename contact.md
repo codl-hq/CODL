@@ -1,6 +1,6 @@
 ---
 title: "Contact Us | DesertScape Co"
-description: "Contact DesertScape Co in Riyadh for landscape design, supply, construction, operation, maintenance, vendors, careers, and partnerships."
+description: "Contact DesertScape Co in Riyadh for landscape design, supply, construction, maintenance, project inquiries and partnerships across Saudi Arabia."
 canonical: "https://www.desertscapeco.com/contact"
 language: "en"
 publisher: "DesertScape Co"
@@ -15,7 +15,7 @@ Contact
 
 # Contact Us
 
-Get in touch with DesertScape Co for projects, vendors, careers, and partnerships.
+Contact DesertScape for landscape projects
 
 ![Project inquiries](https://www.desertscapeco.com/assets/visual-company-trust-riyadh.jpg)
 

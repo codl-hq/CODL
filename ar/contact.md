@@ -15,7 +15,7 @@ generator: "scripts/build-agent-markdown.py"
 
 # تواصل معنا
 
-تواصل مع DesertScape Co للمشاريع والبائعين والمهن والشراكات.
+تواصل مع DesertScape بشأن مشاريع اللاندسكيب
 
 ![استفسارات المشروع](https://www.desertscapeco.com/assets/visual-company-trust-riyadh.jpg)
 

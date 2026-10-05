@@ -15,7 +15,7 @@ generator: "scripts/build-agent-markdown.py"
 
 # 联系我们
 
-与 DesertScape Co 联系，了解项目、供应商、职业和合作伙伴关系。
+如有景观项目需求，请联系DesertScape
 
 ![项目查询](https://www.desertscapeco.com/assets/visual-company-trust-riyadh.jpg)
 

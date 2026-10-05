@@ -15,7 +15,7 @@ generator: "scripts/build-agent-markdown.py"
 
 # Свяжитесь с нами
 
-Свяжитесь с DesertScape Co по вопросам проектов, поставщиков, карьеры и партнерства.
+Свяжитесь с DesertScape по вопросам ландшафтных проектов
 
 ![Запросы по проекту](https://www.desertscapeco.com/assets/visual-company-trust-riyadh.jpg)
 

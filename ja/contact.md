@@ -15,7 +15,7 @@ generator: "scripts/build-agent-markdown.py"
 
 # お問い合わせ
 
-プロジェクト、ベンダー、キャリア、パートナーシップについては、DesertScape Co までお問い合わせください。
+造園プロジェクトについてDesertScapeにお問い合わせください
 
 ![プロジェクトのお問い合わせ](https://www.desertscapeco.com/assets/visual-company-trust-riyadh.jpg)
 
