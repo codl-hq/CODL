@@ -27,9 +27,9 @@ Site review, measurements, access study, constraints mapping, utilities awarenes
 
 [Open page](https://www.desertscapeco.com/services/survey-site-assessment)
 
-### Landscape Design
+### Landscape Architecture Design
 
-Concept, schematic, detailed, and construction stage landscape design for refined outdoor environments in Saudi Arabia.
+Landscape architecture design services in Saudi Arabia, from site assessment and concept design to schematic design, detailed design, Issued for Construction (IFC) drawings and tender documents.
 
 [Open page](https://www.desertscapeco.com/services/landscape-design)
 
@@ -67,9 +67,9 @@ Irrigation system design, supply, installation, commissioning, and maintenance s
 
 [Open page](https://www.desertscapeco.com/services/irrigation-systems-riyadh)
 
-### Landscape Contractor Riyadh
+### Landscape Contractor in Riyadh
 
-Landscape contractor services in Riyadh for design coordination, supply, construction, irrigation, hardscape, softscape, lighting, and maintenance planning.
+Landscape contractor based in Riyadh, delivering design, supply, construction, operation and maintenance across Saudi Arabia.
 
 [Open page](https://www.desertscapeco.com/services/landscape-contractor-riyadh)
 

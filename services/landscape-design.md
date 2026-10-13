@@ -13,70 +13,72 @@ generator: "scripts/build-agent-markdown.py"
 ---
 Service
 
-# Landscape Design
+# Landscape Architecture Design
 
-Concept, schematic, detailed, and construction stage landscape design for refined outdoor environments in Saudi Arabia.
+Landscape architecture design services in Saudi Arabia, from site assessment and concept design to schematic design, detailed design, Issued for Construction (IFC) drawings and tender documents.
 
 ## Scope.
 
-- Concept direction and outdoor experience planning
-- Planting, hardscape, irrigation, lighting, furniture, and water feature coordination
-- Tender packages, bills of quantities, schedules, and drawings
-- Design support for owners, consultants, and contractors
+- Site assessment and project brief
+- Concept and schematic landscape architecture design
+- Detailed design and Issued for Construction (IFC) drawings
+- Tender documents, bills of quantities and schedules
+- Planting, hardscape, irrigation, lighting, site furniture and water-feature coordination
+- Design support for owners, developers, consultants and contractors
 
 Each service can be provided as a standalone scope or connected to other DesertScape services depending on the project stage.
 
 [Request this service](https://www.desertscapeco.com/contact)
 
-## Process.
+## Design stages.
 
 ### 01
 
-Brief and site information review
+Site assessment and design brief
 
 ### 02
 
-Scope definition and technical coordination
+Concept design
 
 ### 03
 
-Budget, schedule, material, and procurement alignment
+Schematic design
 
 ### 04
 
-Execution planning, quality control, and handover preparation
+Detailed design and technical coordination
 
 ### 05
 
-Operation and maintenance planning when required
+IFC drawings and tender documents
 
 ## Typical deliverables.
 
-### Scope narrative
+### Site assessment and design brief
 
-Landscape Design deliverable prepared according to the agreed project scope.
+Site conditions and design requirements reviewed for the agreed project scope.
 
-### Drawings or technical notes where applicable
+### Concept and schematic design drawings
 
-Landscape Design deliverable prepared according to the agreed project scope.
+Landscape concept and schematic drawings for the agreed design stage.
 
-### Material, plant, or system schedules
+### Detailed design and schedules
 
-Landscape Design deliverable prepared according to the agreed project scope.
+Coordinated landscape drawings with plant, material and system schedules.
 
-### Budget and procurement inputs
+### Issued for Construction (IFC) drawings
 
-Landscape Design deliverable prepared according to the agreed project scope.
+IFC drawings for the agreed landscape package.
 
-### Inspection, handover, or maintenance documentation
+### Tender documents and bills of quantities
 
-Landscape Design deliverable prepared according to the agreed project scope.
+Tender documents, bills of quantities and schedules as required by the agreed scope.
 
 ## Project coordination.
 
 ### Scope
 
-Landscape Design
+Landscape Architecture Design
 
 ### Project Context
 
@@ -96,14 +98,14 @@ Inspection, handover, and maintenance planning are tracked through agreed projec
 {
   "@context": "https://schema.org",
   "@type": "Service",
-  "name": "Landscape Design in Saudi Arabia",
+  "name": "Landscape Architecture Design in Saudi Arabia",
   "provider": {
     "@type": "Organization",
     "name": "DesertScape Co",
     "url": "https://www.desertscapeco.com"
   },
   "areaServed": "Saudi Arabia",
-  "description": "Concept, schematic, detailed, and construction stage landscape design for refined outdoor environments in Saudi Arabia."
+  "description": "Landscape architecture design services in Saudi Arabia, from site assessment and concept design to schematic design, detailed design, Issued for Construction (IFC) drawings and tender documents."
 }
 ```
 
@@ -127,7 +129,7 @@ Inspection, handover, and maintenance planning are tracked through agreed projec
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "Landscape Design",
+      "name": "Landscape Architecture Design",
       "item": "https://www.desertscapeco.com/services/landscape-design"
     }
   ]

@@ -1,6 +1,6 @@
 ---
 title: "Landscape Contractor in Riyadh, Saudi Arabia | DesertScape Co"
-description: "Landscape contractor services in Riyadh for design coordination, supply, construction, irrigation, hardscape, softscape, lighting, and maintenance planning."
+description: "Landscape contractor based in Riyadh, delivering design, supply, construction, operation and maintenance across Saudi Arabia."
 canonical: "https://www.desertscapeco.com/services/landscape-contractor-riyadh"
 language: "en"
 publisher: "DesertScape Co"
@@ -13,9 +13,9 @@ generator: "scripts/build-agent-markdown.py"
 ---
 Focused Service
 
-# Landscape Contractor Riyadh
+# Landscape Contractor in Riyadh
 
-Landscape contractor services in Riyadh for design coordination, supply, construction, irrigation, hardscape, softscape, lighting, and maintenance planning.
+DesertScape Co is a Riyadh-based landscape contractor serving projects across Saudi Arabia. We deliver design, supply, construction, operation and maintenance for hardscape, softscape, irrigation, water features, landscape lighting, site furniture, and associated civil, MEP and infrastructure works.
 
 ![Landscape Contractor Riyadh](https://www.desertscapeco.com/assets/visual-public-realm-riyadh.jpg)
 
@@ -38,9 +38,9 @@ Core construction execution and delivery controls.
 
 [Open page](https://www.desertscapeco.com/services/landscape-construction)
 
-### Landscape Design
+### Landscape Architecture Design
 
-Concept, schematic, detailed, and construction stage design support.
+Landscape architecture design services in Saudi Arabia, from site assessment and concept design to schematic design, detailed design, Issued for Construction (IFC) drawings and tender documents.
 
 [Open page](https://www.desertscapeco.com/services/landscape-design)
 
@@ -80,7 +80,7 @@ Yes. DesertScape is based in Riyadh and can review project requirements across S
   "@graph": [
     {
       "@type": "Service",
-      "name": "Landscape Contractor Riyadh by DesertScape Co",
+      "name": "Landscape Contractor in Riyadh | DesertScape Co",
       "provider": {
         "@type": "Organization",
         "name": "DesertScape Co",
@@ -90,8 +90,8 @@ Yes. DesertScape is based in Riyadh and can review project requirements across S
         "Riyadh",
         "Saudi Arabia"
       ],
-      "description": "Landscape contractor services in Riyadh for design coordination, supply, construction, irrigation, hardscape, softscape, lighting, and maintenance planning.",
-      "serviceType": "Landscape Contractor Riyadh",
+      "description": "DesertScape Co is a Riyadh-based landscape contractor serving projects across Saudi Arabia. We deliver design, supply, construction, operation and maintenance for hardscape, softscape, irrigation, water features, landscape lighting, site furniture, and associated civil, MEP and infrastructure works.",
+      "serviceType": "Landscape Contractor in Riyadh",
       "url": "https://www.desertscapeco.com/services/landscape-contractor-riyadh"
     },
     {
@@ -147,7 +147,7 @@ Yes. DesertScape is based in Riyadh and can review project requirements across S
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "Landscape Contractor Riyadh",
+      "name": "Landscape Contractor in Riyadh",
       "item": "https://www.desertscapeco.com/services/landscape-contractor-riyadh"
     }
   ]

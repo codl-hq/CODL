@@ -1,6 +1,6 @@
 ---
-title: "مقاول تنسيق حدائق الرياض | DesertScape Co"
-description: "خدمات مقاولي تنسيق الحدائق في الرياض لتنسيق التصميم والتوريد والبناء والري ولاندسكيب والسوفت سكيب والإضاءة وتخطيط الصيانة."
+title: "مقاول لاند سكيب في الرياض | DesertScape Co"
+description: "مقاول لاند سكيب مقره الرياض، يقدم التصميم والتوريد والتنفيذ والتشغيل والصيانة لمشاريع اللاند سكيب في جميع أنحاء السعودية."
 canonical: "https://www.desertscapeco.com/ar/services/landscape-contractor-riyadh"
 language: "ar"
 publisher: "DesertScape Co"
@@ -13,9 +13,9 @@ generator: "scripts/build-agent-markdown.py"
 ---
 الخدمة المركزة
 
-# مقاول لاندسكيب الرياض
+# مقاول لاند سكيب في الرياض
 
-خدمات مقاولي تنسيق الحدائق في الرياض لتنسيق التصميم والتوريد والبناء والري ولاندسكيب والسوفت سكيب والإضاءة وتخطيط الصيانة.
+DesertScape Co مقاول لاند سكيب مقره الرياض ويخدم المشاريع في جميع أنحاء المملكة العربية السعودية. نقدم التصميم والتوريد والتنفيذ والتشغيل والصيانة للهارد سكيب، والسوفت سكيب، والري، والعناصر المائية، والإضاءة، والأثاث الخارجي، والأعمال المدنية والميكانيكية والكهربائية والصحية ( MEP)، والبنية التحتية المرتبطة بالمشروع.
 
 ![مقاول لاندسكيب الرياض](https://www.desertscapeco.com/assets/visual-public-realm-riyadh.jpg)
 
@@ -80,7 +80,7 @@ DesertScape يمكن أن يدعم هذا النطاق باعتباره مشار
   "@graph": [
     {
       "@type": "Service",
-      "name": "Landscape Contractor Riyadh by DesertScape Co",
+      "name": "مقاول لاند سكيب في الرياض | DesertScape Co",
       "provider": {
         "@type": "Organization",
         "name": "DesertScape Co",
@@ -90,9 +90,9 @@ DesertScape يمكن أن يدعم هذا النطاق باعتباره مشار
         "Riyadh",
         "Saudi Arabia"
       ],
-      "description": "Landscape contractor services in Riyadh for design coordination, supply, construction, irrigation, hardscape, softscape, lighting, and maintenance planning.",
-      "serviceType": "Landscape Contractor Riyadh",
-      "url": "https://www.desertscapeco.com/services/landscape-contractor-riyadh"
+      "description": "DesertScape Co مقاول لاند سكيب مقره الرياض ويخدم المشاريع في جميع أنحاء المملكة العربية السعودية. نقدم التصميم والتوريد والتنفيذ والتشغيل والصيانة للهارد سكيب، والسوفت سكيب، والري، والعناصر المائية، والإضاءة، والأثاث الخارجي، والأعمال المدنية والميكانيكية والكهربائية والصحية (MEP)، والبنية التحتية المرتبطة بالمشروع.",
+      "serviceType": "مقاول لاند سكيب في الرياض",
+      "url": "https://www.desertscapeco.com/ar/services/landscape-contractor-riyadh"
     },
     {
       "@type": "FAQPage",
@@ -136,19 +136,19 @@ DesertScape يمكن أن يدعم هذا النطاق باعتباره مشار
       "@type": "ListItem",
       "position": 1,
       "name": "Home",
-      "item": "https://www.desertscapeco.com/"
+      "item": "https://www.desertscapeco.com/ar/"
     },
     {
       "@type": "ListItem",
       "position": 2,
       "name": "Services",
-      "item": "https://www.desertscapeco.com/services"
+      "item": "https://www.desertscapeco.com/ar/services"
     },
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "Landscape Contractor Riyadh",
-      "item": "https://www.desertscapeco.com/services/landscape-contractor-riyadh"
+      "name": "مقاول لاند سكيب في الرياض",
+      "item": "https://www.desertscapeco.com/ar/services/landscape-contractor-riyadh"
     }
   ]
 }

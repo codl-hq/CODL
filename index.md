@@ -1,6 +1,6 @@
 ---
-title: "Landscape Design Company in Riyadh, Saudi Arabia | DesertScape Co"
-description: "DesertScape is a Riyadh based landscape design and construction company serving Saudi Arabia, with supply, irrigation, hardscape, softscape, and maintenance."
+title: "Landscape Company in Riyadh, Saudi Arabia | DesertScape Co"
+description: "Riyadh-based landscape company delivering design, supply, construction, operation and maintenance for landscape projects across Saudi Arabia."
 canonical: "https://www.desertscapeco.com/"
 language: "en"
 publisher: "DesertScape Co"
@@ -14,7 +14,7 @@ generator: "scripts/build-site.mjs"
 ---
 # DesertScape Co
 
-DesertScape Co is a Riyadh-based landscape company serving Saudi Arabia.
+DesertScape Co delivers landscape projects across Saudi Arabia, from landscape architecture design and supply to construction, operation and maintenance. Our work includes hardscape, softscape, irrigation, water features, landscape lighting, site furniture and the associated civil, MEP and infrastructure works.
 
 Legal name: Desert Landscape Company
 Website: https://www.desertscapeco.com/
@@ -34,7 +34,7 @@ DesertScape Co supports landscape survey, design, supply, procurement, construct
 ## Core Services
 
 - Survey and Site Assessment: Site review, measurements, access study, constraints mapping, utilities awareness, soil observations, existing asset inventory, and early delivery notes. https://www.desertscapeco.com/services/survey-site-assessment
-- Landscape Design: Concept, schematic, detailed, and construction stage landscape design for refined outdoor environments in Saudi Arabia. https://www.desertscapeco.com/services/landscape-design
+- Landscape Architecture Design: Landscape architecture design services in Saudi Arabia, from site assessment and concept design to schematic design, detailed design, Issued for Construction (IFC) drawings and tender documents. https://www.desertscapeco.com/services/landscape-design
 - Supply and Procurement: Procurement support for landscape packages including plants, palms, trees, hardscape, irrigation, lighting, furniture, play, sports, and specialty components. https://www.desertscapeco.com/services/supply-procurement
 - Landscape Construction: Construction execution for softscape, hardscape, irrigation, lighting, water features, civil works, infrastructure, and public realm assets. https://www.desertscapeco.com/services/landscape-construction
 - Operation and Maintenance: Operation and maintenance plans that protect landscape value after handover through routine care, reporting, and performance management. https://www.desertscapeco.com/services/operations-maintenance
@@ -43,7 +43,7 @@ DesertScape Co supports landscape survey, design, supply, procurement, construct
 
 - Landscape Maintenance Riyadh: Preventive and corrective landscape maintenance in Riyadh for residential compounds, hospitality assets, public realm, commercial sites, and private landscapes. https://www.desertscapeco.com/services/landscape-maintenance-riyadh
 - Irrigation Systems Riyadh: Irrigation system design, supply, installation, commissioning, and maintenance support in Riyadh for efficient landscape operation. https://www.desertscapeco.com/services/irrigation-systems-riyadh
-- Landscape Contractor Riyadh: Landscape contractor services in Riyadh for design coordination, supply, construction, irrigation, hardscape, softscape, lighting, and maintenance planning. https://www.desertscapeco.com/services/landscape-contractor-riyadh
+- Landscape Contractor in Riyadh: DesertScape Co is a Riyadh-based landscape contractor serving projects across Saudi Arabia. We deliver design, supply, construction, operation and maintenance for hardscape, softscape, irrigation, water features, landscape lighting, site furniture, and associated civil, MEP and infrastructure works. https://www.desertscapeco.com/services/landscape-contractor-riyadh
 - Softscape Contractor Riyadh: Softscape contractor services in Riyadh for trees, palms, shrubs, groundcovers, turf, soil preparation, planting, irrigation coordination, and plant establishment. https://www.desertscapeco.com/services/softscape-contractor-riyadh
 - Hardscape Contractor Riyadh: Hardscape contractor services in Riyadh for paving, stone, concrete, curbs, walls, walkways, plazas, outdoor finishes, and public realm surfaces. https://www.desertscapeco.com/services/hardscape-contractor-riyadh
 - Hospitality Landscape Contractor Saudi Arabia: Hospitality landscape contractor support in Saudi Arabia for resorts, hotels, arrival landscapes, courtyards, pool areas, guest outdoor environments, and long-term maintenance planning. https://www.desertscapeco.com/services/hospitality-landscape-contractor-saudi-arabia
