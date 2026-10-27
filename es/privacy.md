@@ -27,7 +27,7 @@ La información se utiliza para responder consultas, evaluar oportunidades, gest
 
 ### Análisis y consentimiento
 
-Cuando se requiere consentimiento, el almacenamiento opcional de análisis y medición de publicidad permanece desactivado hasta que usted elija lo contrario. La personalización de publicidad y los datos publicitarios proporcionados por el usuario permanecen deshabilitados.
+Si aceptas la medición de Google Ads, permitimos que Google use identificadores de clics en anuncios y eventos de los botones de contacto del sitio para medir los resultados publicitarios. No enviamos textos de formularios ni contenido de conversaciones de WhatsApp mediante esta medición. La publicidad personalizada sigue desactivada. Puedes rechazar la medición opcional o retirar tu permiso en Configuración de cookies.
 
 ### Opciones de galletas
 
