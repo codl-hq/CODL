@@ -12,7 +12,7 @@
       (function(){
         var id = "G-B1PJ1RBKB2";
         var internalKey = "desertscape-internal-traffic";
-        var consentKey = "desertscape-consent-v2";
+        var consentKey = "desertscape-consent-v3";
         window.dataLayer = window.dataLayer || [];
         window.gtag = window.gtag || function(){window.dataLayer.push(arguments);};
         try {
@@ -23,26 +23,19 @@
         } catch (error) {
         }
         window.gtag("consent", "default", {
-          analytics_storage: "granted",
-          ad_storage: "granted",
-          ad_user_data: "denied",
-          ad_personalization: "denied"
-        });
-        window.gtag("consent", "default", {
           analytics_storage: "denied",
           ad_storage: "denied",
           ad_user_data: "denied",
           ad_personalization: "denied",
-          region: ["AE","ES","FR","GB","GR","IT","JP","LB","SG","US"],
           wait_for_update: 500
         });
         try {
           var storedConsent = JSON.parse(window.localStorage.getItem(consentKey) || "null");
-          if (storedConsent && typeof storedConsent.analytics === "boolean" && typeof storedConsent.advertising === "boolean") {
+          if (storedConsent && storedConsent.version === 3 && storedConsent.noticeVersion === "2026-10-26" && typeof storedConsent.analytics === "boolean" && typeof storedConsent.advertising === "boolean") {
             window.gtag("consent", "update", {
               analytics_storage: storedConsent.analytics ? "granted" : "denied",
               ad_storage: storedConsent.advertising ? "granted" : "denied",
-              ad_user_data: "denied",
+              ad_user_data: storedConsent.advertising ? "granted" : "denied",
               ad_personalization: "denied"
             });
           }
