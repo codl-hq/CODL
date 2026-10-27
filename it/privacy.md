@@ -27,7 +27,7 @@ Le informazioni vengono utilizzate per rispondere a richieste, valutare opportun
 
 ### Analisi e consenso
 
-Laddove è richiesto il consenso, l'analisi facoltativa e la memorizzazione delle misurazioni pubblicitarie rimangono disattivate finché non scegli diversamente. La personalizzazione della pubblicità e i dati pubblicitari forniti dagli utenti rimangono disabilitati.
+Se accetti la misurazione di Google Ads, consentiamo a Google di usare gli identificatori dei clic sugli annunci e gli eventi dei pulsanti di contatto del sito per misurare i risultati pubblicitari. Questa misurazione non invia i testi dei moduli né il contenuto delle conversazioni WhatsApp. La pubblicità personalizzata resta disattivata. Puoi rifiutare la misurazione facoltativa o revocare il consenso in Impostazioni dei cookie.
 
 ### Scelte dei cookie
 
