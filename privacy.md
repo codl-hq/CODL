@@ -27,7 +27,7 @@ Information is used to respond to inquiries, assess opportunities, manage vendor
 
 ### Analytics and Consent
 
-Where consent is required, optional analytics and advertising measurement storage remain off until you choose otherwise. Advertising personalization and user-provided advertising data remain disabled.
+If you opt in to Google Ads measurement, we allow Google to use ad-click identifiers and website contact-button events to measure advertising results. We do not send form message text or WhatsApp conversation content through this measurement. Personalised advertising remains disabled. You can refuse optional measurement or withdraw your choice using Cookie settings.
 
 ### Cookie Choices
 

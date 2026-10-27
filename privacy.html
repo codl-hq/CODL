@@ -27,7 +27,7 @@
       (function(){
         var id = "G-B1PJ1RBKB2";
         var internalKey = "desertscape-internal-traffic";
-        var consentKey = "desertscape-consent-v2";
+        var consentKey = "desertscape-consent-v3";
         window.dataLayer = window.dataLayer || [];
         window.gtag = window.gtag || function(){window.dataLayer.push(arguments);};
         try {
@@ -38,26 +38,19 @@
         } catch (error) {
         }
         window.gtag("consent", "default", {
-          analytics_storage: "granted",
-          ad_storage: "granted",
-          ad_user_data: "denied",
-          ad_personalization: "denied"
-        });
-        window.gtag("consent", "default", {
           analytics_storage: "denied",
           ad_storage: "denied",
           ad_user_data: "denied",
           ad_personalization: "denied",
-          region: ["AE","ES","FR","GB","GR","IT","JP","LB","SG","US"],
           wait_for_update: 500
         });
         try {
           var storedConsent = JSON.parse(window.localStorage.getItem(consentKey) || "null");
-          if (storedConsent && typeof storedConsent.analytics === "boolean" && typeof storedConsent.advertising === "boolean") {
+          if (storedConsent && storedConsent.version === 3 && storedConsent.noticeVersion === "2026-10-26" && typeof storedConsent.analytics === "boolean" && typeof storedConsent.advertising === "boolean") {
             window.gtag("consent", "update", {
               analytics_storage: storedConsent.analytics ? "granted" : "denied",
               ad_storage: storedConsent.advertising ? "granted" : "denied",
-              ad_user_data: "denied",
+              ad_user_data: storedConsent.advertising ? "granted" : "denied",
               ad_personalization: "denied"
             });
           }
@@ -180,41 +173,139 @@ if (document.readyState === "loading") {
 if (!window.DesertScapeConsent) {
 window.DesertScapeConsent = true;
 
-const consentStorageKey = "desertscape-consent-v2";
-const consentCountries = new Set(["AE", "ES", "FR", "GB", "GR", "IT", "JP", "LB", "SG", "US"]);
+const consentStorageKey = "desertscape-consent-v3";
+const consentNoticeVersion = "2026-10-26";
 const consentCopy = {
-  en: {
-    title: "Your privacy choices",
-    message: "We use optional analytics and advertising measurement to understand website performance and improve project inquiries. Personalised advertising and user-provided advertising data stay off.",
-    accept: "Accept measurement",
-    reject: "Reject optional",
-    manage: "Manage choices",
-    save: "Save choices",
-    analytics: "Analytics measurement",
-    advertising: "Advertising measurement",
-    privacy: "Privacy policy",
-    settings: "Cookie settings"
+  "en": {
+    "title": "Your privacy choices",
+    "message": "With your permission, we use analytics to understand website use and Google Ads measurement to see which ads lead to project inquiries. Google Ads measurement shares ad-click and website contact-button activity with Google. Personalised advertising stays off. You can reject optional measurement or change your choices at any time.",
+    "accept": "Accept measurement",
+    "reject": "Reject optional",
+    "manage": "Manage choices",
+    "save": "Save choices",
+    "analytics": "Website analytics",
+    "advertising": "Google Ads measurement",
+    "privacy": "Privacy policy",
+    "settings": "Cookie settings",
+    "privacyMessage": "If you opt in to Google Ads measurement, we allow Google to use ad-click identifiers and website contact-button events to measure advertising results. We do not send form message text or WhatsApp conversation content through this measurement. Personalised advertising remains disabled. You can refuse optional measurement or withdraw your choice using Cookie settings."
   },
-  ar: {
-    title: "خيارات الخصوصية",
-    message: "نستخدم قياس التحليلات والإعلانات الاختياري لفهم أداء الموقع وتحسين استفسارات المشاريع. تظل الإعلانات المخصصة وبيانات المستخدم المقدمة للإعلانات متوقفة.",
-    accept: "قبول القياس",
-    reject: "رفض الاختياري",
-    manage: "إدارة الخيارات",
-    save: "حفظ الخيارات",
-    analytics: "قياس التحليلات",
-    advertising: "قياس الإعلانات",
-    privacy: "سياسة الخصوصية",
-    settings: "إعدادات ملفات الارتباط"
+  "ar": {
+    "title": "خيارات الخصوصية",
+    "message": "بموافقتك، نستخدم التحليلات لفهم استخدام الموقع وقياس إعلانات Google لمعرفة الإعلانات التي تؤدي إلى استفسارات المشاريع. يشارك قياس إعلانات Google بيانات النقر على الإعلانات والتفاعل مع أزرار التواصل في الموقع مع Google. تظل الإعلانات المخصصة متوقفة. يمكنك رفض القياس الاختياري أو تغيير خياراتك في أي وقت.",
+    "accept": "قبول القياس",
+    "reject": "رفض الاختياري",
+    "manage": "إدارة الخيارات",
+    "save": "حفظ الخيارات",
+    "analytics": "تحليلات الموقع",
+    "advertising": "قياس إعلانات Google",
+    "privacy": "سياسة الخصوصية",
+    "settings": "إعدادات ملفات الارتباط",
+    "privacyMessage": "إذا وافقت على قياس إعلانات Google، نسمح لـ Google باستخدام معرّفات النقر على الإعلانات وأحداث أزرار التواصل في الموقع لقياس نتائج الإعلانات. لا نرسل نصوص رسائل النماذج أو محتوى محادثات WhatsApp من خلال هذا القياس. تظل الإعلانات المخصصة متوقفة. يمكنك رفض القياس الاختياري أو سحب موافقتك عبر إعدادات ملفات الارتباط."
   },
-  es: { title: "Opciones de privacidad", message: "Usamos medición opcional de analítica y publicidad para entender el rendimiento del sitio y mejorar las consultas de proyectos. La publicidad personalizada y los datos publicitarios proporcionados por el usuario permanecen desactivados.", accept: "Aceptar medición", reject: "Rechazar opcionales", manage: "Gestionar opciones", save: "Guardar opciones", analytics: "Medición analítica", advertising: "Medición publicitaria", privacy: "Política de privacidad", settings: "Configuración de cookies" },
-  fr: { title: "Vos choix de confidentialité", message: "Nous utilisons des mesures facultatives d'analyse et de publicité pour comprendre les performances du site et améliorer les demandes de projets. La publicité personnalisée et les données publicitaires fournies par l'utilisateur restent désactivées.", accept: "Accepter la mesure", reject: "Refuser l'optionnel", manage: "Gérer les choix", save: "Enregistrer", analytics: "Mesure d'audience", advertising: "Mesure publicitaire", privacy: "Politique de confidentialité", settings: "Paramètres des cookies" },
-  it: { title: "Le tue scelte sulla privacy", message: "Utilizziamo misurazioni facoltative di analisi e pubblicità per capire le prestazioni del sito e migliorare le richieste di progetto. La pubblicità personalizzata e i dati pubblicitari forniti dall'utente restano disattivati.", accept: "Accetta misurazione", reject: "Rifiuta opzionali", manage: "Gestisci scelte", save: "Salva scelte", analytics: "Misurazione analitica", advertising: "Misurazione pubblicitaria", privacy: "Informativa sulla privacy", settings: "Impostazioni dei cookie" },
-  ja: { title: "プライバシー設定", message: "サイトの性能を把握し、プロジェクトのお問い合わせを改善するため、任意のアクセス解析と広告計測を使用します。パーソナライズ広告とユーザー提供の広告データは無効のままです。", accept: "計測を許可", reject: "任意項目を拒否", manage: "設定を管理", save: "設定を保存", analytics: "アクセス解析", advertising: "広告計測", privacy: "プライバシーポリシー", settings: "Cookie設定" },
-  ko: { title: "개인정보 선택", message: "사이트 성능을 파악하고 프로젝트 문의를 개선하기 위해 선택적 분석 및 광고 측정을 사용합니다. 맞춤 광고와 사용자가 제공한 광고 데이터는 계속 비활성화됩니다.", accept: "측정 허용", reject: "선택 항목 거부", manage: "선택 관리", save: "선택 저장", analytics: "분석 측정", advertising: "광고 측정", privacy: "개인정보 처리방침", settings: "쿠키 설정" },
-  ru: { title: "Настройки конфиденциальности", message: "Мы используем необязательные аналитические и рекламные измерения, чтобы оценивать работу сайта и улучшать обращения по проектам. Персонализированная реклама и рекламные данные, предоставленные пользователем, остаются отключенными.", accept: "Разрешить измерение", reject: "Отклонить необязательное", manage: "Управление настройками", save: "Сохранить", analytics: "Аналитические измерения", advertising: "Рекламные измерения", privacy: "Политика конфиденциальности", settings: "Настройки файлов cookie" },
-  th: { title: "ตัวเลือกความเป็นส่วนตัว", message: "เราใช้การวัดผลการวิเคราะห์และโฆษณาแบบไม่บังคับเพื่อทำความเข้าใจประสิทธิภาพเว็บไซต์และปรับปรุงการสอบถามโครงการ โฆษณาเฉพาะบุคคลและข้อมูลโฆษณาที่ผู้ใช้ให้ไว้จะยังคงปิดอยู่", accept: "ยอมรับการวัดผล", reject: "ปฏิเสธรายการเสริม", manage: "จัดการตัวเลือก", save: "บันทึกตัวเลือก", analytics: "การวัดผลการวิเคราะห์", advertising: "การวัดผลโฆษณา", privacy: "นโยบายความเป็นส่วนตัว", settings: "การตั้งค่าคุกกี้" },
-  "zh-CN": { title: "隐私选项", message: "我们使用可选的分析和广告衡量来了解网站表现并改进项目咨询。个性化广告和用户提供的广告数据保持关闭。", accept: "接受衡量", reject: "拒绝可选项", manage: "管理选项", save: "保存选项", analytics: "分析衡量", advertising: "广告衡量", privacy: "隐私政策", settings: "Cookie 设置" }
+  "es": {
+    "title": "Opciones de privacidad",
+    "message": "Con tu permiso, usamos analítica para entender el uso del sitio y la medición de Google Ads para saber qué anuncios generan consultas de proyectos. La medición de Google Ads comparte con Google datos de clics en anuncios y actividad en los botones de contacto del sitio. La publicidad personalizada sigue desactivada. Puedes rechazar la medición opcional o cambiar tus opciones en cualquier momento.",
+    "accept": "Aceptar medición",
+    "reject": "Rechazar opcionales",
+    "manage": "Gestionar opciones",
+    "save": "Guardar opciones",
+    "analytics": "Analítica del sitio",
+    "advertising": "Medición de Google Ads",
+    "privacy": "Política de privacidad",
+    "settings": "Configuración de cookies",
+    "privacyMessage": "Si aceptas la medición de Google Ads, permitimos que Google use identificadores de clics en anuncios y eventos de los botones de contacto del sitio para medir los resultados publicitarios. No enviamos textos de formularios ni contenido de conversaciones de WhatsApp mediante esta medición. La publicidad personalizada sigue desactivada. Puedes rechazar la medición opcional o retirar tu permiso en Configuración de cookies."
+  },
+  "fr": {
+    "title": "Vos choix de confidentialité",
+    "message": "Avec votre accord, nous utilisons l'analyse du site et la mesure Google Ads pour comprendre quelles annonces génèrent des demandes de projets. La mesure Google Ads partage avec Google les clics sur les annonces et l'activité des boutons de contact du site. La publicité personnalisée reste désactivée. Vous pouvez refuser la mesure facultative ou modifier vos choix à tout moment.",
+    "accept": "Accepter la mesure",
+    "reject": "Refuser l'optionnel",
+    "manage": "Gérer les choix",
+    "save": "Enregistrer",
+    "analytics": "Analyse du site",
+    "advertising": "Mesure Google Ads",
+    "privacy": "Politique de confidentialité",
+    "settings": "Paramètres des cookies",
+    "privacyMessage": "Si vous acceptez la mesure Google Ads, nous autorisons Google à utiliser les identifiants de clics publicitaires et les événements des boutons de contact du site pour mesurer les résultats publicitaires. Cette mesure ne transmet ni les textes des formulaires ni le contenu des conversations WhatsApp. La publicité personnalisée reste désactivée. Vous pouvez refuser la mesure facultative ou retirer votre accord dans Paramètres des cookies."
+  },
+  "it": {
+    "title": "Le tue scelte sulla privacy",
+    "message": "Con il tuo consenso, usiamo l'analisi del sito e la misurazione di Google Ads per capire quali annunci generano richieste di progetto. La misurazione di Google Ads condivide con Google i clic sugli annunci e l'attività dei pulsanti di contatto del sito. La pubblicità personalizzata resta disattivata. Puoi rifiutare la misurazione facoltativa o modificare le scelte in qualsiasi momento.",
+    "accept": "Accetta misurazione",
+    "reject": "Rifiuta opzionali",
+    "manage": "Gestisci scelte",
+    "save": "Salva scelte",
+    "analytics": "Analisi del sito",
+    "advertising": "Misurazione Google Ads",
+    "privacy": "Informativa sulla privacy",
+    "settings": "Impostazioni dei cookie",
+    "privacyMessage": "Se accetti la misurazione di Google Ads, consentiamo a Google di usare gli identificatori dei clic sugli annunci e gli eventi dei pulsanti di contatto del sito per misurare i risultati pubblicitari. Questa misurazione non invia i testi dei moduli né il contenuto delle conversazioni WhatsApp. La pubblicità personalizzata resta disattivata. Puoi rifiutare la misurazione facoltativa o revocare il consenso in Impostazioni dei cookie."
+  },
+  "ja": {
+    "title": "プライバシー設定",
+    "message": "同意をいただいた場合、サイトの利用状況を把握するためのアクセス解析と、どの広告がプロジェクトのお問い合わせにつながったかを確認するGoogle Ads計測を使用します。Google Ads計測では、広告クリックとサイトの連絡ボタンの操作情報をGoogleと共有します。パーソナライズ広告は無効のままです。任意の計測を拒否したり、いつでも設定を変更したりできます。",
+    "accept": "計測を許可",
+    "reject": "任意項目を拒否",
+    "manage": "設定を管理",
+    "save": "設定を保存",
+    "analytics": "サイトのアクセス解析",
+    "advertising": "Google Ads計測",
+    "privacy": "プライバシーポリシー",
+    "settings": "Cookie設定",
+    "privacyMessage": "Google Ads計測に同意した場合、広告の成果を測定するために、広告クリック識別子とサイトの連絡ボタンのイベントをGoogleが使用することを許可します。この計測でフォームのメッセージ本文やWhatsAppの会話内容を送信することはありません。パーソナライズ広告は無効のままです。任意の計測を拒否したり、Cookie設定で同意を撤回したりできます。"
+  },
+  "ko": {
+    "title": "개인정보 선택",
+    "message": "동의하시면 사이트 이용을 이해하기 위한 분석과 어떤 광고가 프로젝트 문의로 이어지는지 확인하기 위한 Google Ads 측정을 사용합니다. Google Ads 측정은 광고 클릭 및 사이트 연락 버튼 활동 정보를 Google과 공유합니다. 맞춤 광고는 계속 비활성화됩니다. 선택적 측정을 거부하거나 언제든지 선택을 변경할 수 있습니다.",
+    "accept": "측정 허용",
+    "reject": "선택 항목 거부",
+    "manage": "선택 관리",
+    "save": "선택 저장",
+    "analytics": "사이트 분석",
+    "advertising": "Google Ads 측정",
+    "privacy": "개인정보 처리방침",
+    "settings": "쿠키 설정",
+    "privacyMessage": "Google Ads 측정에 동의하시면 광고 성과를 측정하기 위해 Google이 광고 클릭 식별자와 사이트 연락 버튼 이벤트를 사용하도록 허용합니다. 이 측정을 통해 양식 메시지 본문이나 WhatsApp 대화 내용을 전송하지 않습니다. 맞춤 광고는 계속 비활성화됩니다. 선택적 측정을 거부하거나 쿠키 설정에서 동의를 철회할 수 있습니다."
+  },
+  "ru": {
+    "title": "Настройки конфиденциальности",
+    "message": "С вашего согласия мы используем аналитику сайта и измерение Google Ads, чтобы понять, какие объявления приводят к запросам по проектам. Измерение Google Ads передаёт Google данные о кликах по объявлениям и действиях с кнопками связи на сайте. Персонализированная реклама остаётся отключённой. Вы можете отказаться от необязательных измерений или изменить выбор в любое время.",
+    "accept": "Разрешить измерение",
+    "reject": "Отклонить необязательное",
+    "manage": "Управление настройками",
+    "save": "Сохранить",
+    "analytics": "Аналитика сайта",
+    "advertising": "Измерение Google Ads",
+    "privacy": "Политика конфиденциальности",
+    "settings": "Настройки файлов cookie",
+    "privacyMessage": "Если вы согласитесь на измерение Google Ads, мы разрешим Google использовать идентификаторы рекламных кликов и события кнопок связи на сайте для оценки результатов рекламы. При этом тексты сообщений из форм и содержание переписки WhatsApp не передаются. Персонализированная реклама остаётся отключённой. Вы можете отказаться от необязательных измерений или отозвать согласие в настройках файлов cookie."
+  },
+  "th": {
+    "title": "ตัวเลือกความเป็นส่วนตัว",
+    "message": "เมื่อคุณยินยอม เราใช้การวิเคราะห์เพื่อทำความเข้าใจการใช้งานเว็บไซต์ และการวัดผล Google Ads เพื่อดูว่าโฆษณาใดนำไปสู่การสอบถามโครงการ การวัดผล Google Ads จะแชร์ข้อมูลการคลิกโฆษณาและการใช้งานปุ่มติดต่อบนเว็บไซต์กับ Google โฆษณาเฉพาะบุคคลยังคงปิดอยู่ คุณสามารถปฏิเสธการวัดผลแบบไม่บังคับหรือเปลี่ยนตัวเลือกได้ทุกเมื่อ",
+    "accept": "ยอมรับการวัดผล",
+    "reject": "ปฏิเสธรายการเสริม",
+    "manage": "จัดการตัวเลือก",
+    "save": "บันทึกตัวเลือก",
+    "analytics": "การวิเคราะห์เว็บไซต์",
+    "advertising": "การวัดผล Google Ads",
+    "privacy": "นโยบายความเป็นส่วนตัว",
+    "settings": "การตั้งค่าคุกกี้",
+    "privacyMessage": "หากคุณยินยอมให้วัดผล Google Ads เราจะอนุญาตให้ Google ใช้รหัสระบุการคลิกโฆษณาและเหตุการณ์ปุ่มติดต่อบนเว็บไซต์เพื่อวัดผลโฆษณา การวัดผลนี้ไม่ส่งข้อความในแบบฟอร์มหรือเนื้อหาการสนทนา WhatsApp โฆษณาเฉพาะบุคคลยังคงปิดอยู่ คุณสามารถปฏิเสธการวัดผลแบบไม่บังคับหรือถอนความยินยอมผ่านการตั้งค่าคุกกี้ได้"
+  },
+  "zh-CN": {
+    "title": "隐私选项",
+    "message": "经您同意，我们使用网站分析了解网站使用情况，并通过Google Ads衡量哪些广告带来了项目咨询。Google Ads衡量会与Google分享广告点击和网站联系按钮的操作信息。个性化广告保持关闭。您可以拒绝可选衡量，或随时更改选择。",
+    "accept": "接受衡量",
+    "reject": "拒绝可选项",
+    "manage": "管理选项",
+    "save": "保存选项",
+    "analytics": "网站分析",
+    "advertising": "Google Ads衡量",
+    "privacy": "隐私政策",
+    "settings": "Cookie 设置",
+    "privacyMessage": "如果您同意Google Ads衡量，我们将允许Google使用广告点击标识符和网站联系按钮事件来衡量广告效果。我们不会通过此衡量发送表单消息正文或WhatsApp对话内容。个性化广告保持关闭。您可以拒绝可选衡量，或通过Cookie设置撤回同意。"
+  }
 };
 
 function consentLanguage() {
@@ -225,17 +316,22 @@ function consentLanguage() {
 function readConsentChoice() {
   try {
     const choice = JSON.parse(window.localStorage.getItem(consentStorageKey) || "null");
-    if (choice && typeof choice.analytics === "boolean" && typeof choice.advertising === "boolean") return choice;
+    if (choice && choice.version === 3 && choice.noticeVersion === consentNoticeVersion && typeof choice.analytics === "boolean" && typeof choice.advertising === "boolean") return choice;
+    const legacy = JSON.parse(window.localStorage.getItem("desertscape-consent-v2") || "null");
+    if (legacy && legacy.analytics === false && legacy.advertising === false) {
+      return { version: 3, noticeVersion: consentNoticeVersion, analytics: false, advertising: false };
+    }
   } catch (error) {}
   return null;
 }
 
 function updateGoogleConsent(choice) {
   if (typeof window.gtag !== "function") return;
+  const currentNotice = choice.version === 3 && choice.noticeVersion === consentNoticeVersion;
   window.gtag("consent", "update", {
-    analytics_storage: choice.analytics ? "granted" : "denied",
-    ad_storage: choice.advertising ? "granted" : "denied",
-    ad_user_data: "denied",
+    analytics_storage: currentNotice && choice.analytics ? "granted" : "denied",
+    ad_storage: currentNotice && choice.advertising ? "granted" : "denied",
+    ad_user_data: currentNotice && choice.advertising ? "granted" : "denied",
     ad_personalization: "denied"
   });
 }
@@ -286,10 +382,11 @@ function buildConsentBanner(forceOpen) {
 }
 
 function saveConsentChoice(choice) {
+  const record = { version: 3, noticeVersion: consentNoticeVersion, analytics: choice.analytics === true, advertising: choice.advertising === true };
   try {
-    window.localStorage.setItem(consentStorageKey, JSON.stringify(choice));
+    window.localStorage.setItem(consentStorageKey, JSON.stringify(record));
   } catch (error) {}
-  updateGoogleConsent(choice);
+  updateGoogleConsent(record);
   const banner = document.querySelector("[data-consent-banner]");
   if (banner) banner.hidden = true;
 }
@@ -305,14 +402,7 @@ async function initConsentControls() {
     updateGoogleConsent(saved);
     return;
   }
-  let country = "";
-  try {
-    const response = await fetch("/cdn-cgi/trace", { cache: "no-store", credentials: "omit" });
-    const trace = response.ok ? await response.text() : "";
-    country = (trace.match(/(?:^|\n)loc=([A-Z]{2})(?:\n|$)/) || [])[1] || "";
-  } catch (error) {}
-  const internationalLanding = /\/services\/landscape-contractor-riyadh\/?$/.test(window.location.pathname);
-  if (consentCountries.has(country) || (!country && internationalLanding)) buildConsentBanner(true);
+  buildConsentBanner(true);
 }
 
 if (document.readyState === "loading") {
@@ -624,7 +714,7 @@ rememberAdsAttribution();
         <h1>Privacy Policy</h1>
         <p>Effective date: 2026-06-09.</p>
       </section>
-      <section class="section"><div class="list-grid"><article><h3>Information Received</h3><p>We may receive information you send by email or forms, including name, company, contact details, project information, vendor documents, or CVs.</p></article><article><h3>Use</h3><p>Information is used to respond to inquiries, assess opportunities, manage vendors, review career interest, and improve business communications.</p></article><article><h3>Analytics and Consent</h3><p>Where consent is required, optional analytics and advertising measurement storage remain off until you choose otherwise. Advertising personalization and user-provided advertising data remain disabled.</p></article><article><h3>Cookie Choices</h3><p>You can accept, reject, or change optional measurement choices at any time using Cookie settings in the website footer.</p></article><article><h3>Sharing</h3><p>Information may be shared with DesertScape team members, service providers, or advisers as needed for business purposes.</p></article><article><h3>Contact</h3><p>Privacy questions may be sent to projects&#64;desertscapeco.com.</p></article></div></section>
+      <section class="section"><div class="list-grid"><article><h3>Information Received</h3><p>We may receive information you send by email or forms, including name, company, contact details, project information, vendor documents, or CVs.</p></article><article><h3>Use</h3><p>Information is used to respond to inquiries, assess opportunities, manage vendors, review career interest, and improve business communications.</p></article><article><h3>Analytics and Consent</h3><p>If you opt in to Google Ads measurement, we allow Google to use ad-click identifiers and website contact-button events to measure advertising results. We do not send form message text or WhatsApp conversation content through this measurement. Personalised advertising remains disabled. You can refuse optional measurement or withdraw your choice using Cookie settings.</p></article><article><h3>Cookie Choices</h3><p>You can accept, reject, or change optional measurement choices at any time using Cookie settings in the website footer.</p></article><article><h3>Sharing</h3><p>Information may be shared with DesertScape team members, service providers, or advisers as needed for business purposes.</p></article><article><h3>Contact</h3><p>Privacy questions may be sent to projects&#64;desertscapeco.com.</p></article></div></section>
     </main>
     <footer class="site-footer">
       <div class="footer-line">
