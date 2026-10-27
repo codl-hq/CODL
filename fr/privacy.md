@@ -27,7 +27,7 @@ Les informations sont utilisées pour répondre aux demandes de renseignements, 
 
 ### Analyse et consentement
 
-Lorsque le consentement est requis, le stockage facultatif des analyses et des mesures publicitaires reste désactivé jusqu'à ce que vous en décidiez autrement. La personnalisation de la publicité et les données publicitaires fournies par l'utilisateur restent désactivées.
+Si vous acceptez la mesure Google Ads, nous autorisons Google à utiliser les identifiants de clics publicitaires et les événements des boutons de contact du site pour mesurer les résultats publicitaires. Cette mesure ne transmet ni les textes des formulaires ni le contenu des conversations WhatsApp. La publicité personnalisée reste désactivée. Vous pouvez refuser la mesure facultative ou retirer votre accord dans Paramètres des cookies.
 
 ### Choix de cookies
 
