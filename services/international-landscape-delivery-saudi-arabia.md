@@ -1,5 +1,5 @@
 ---
-title: "International Delivery in Saudi Arabia | DesertScape Co"
+title: "Landscape Delivery in Saudi Arabia | DesertScape Co"
 description: "Saudi landscape delivery partner for international companies, consultants, architects, contractors, sports, production, and events teams."
 canonical: "https://www.desertscapeco.com/services/international-landscape-delivery-saudi-arabia"
 language: "en"
