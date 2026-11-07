@@ -49,9 +49,9 @@ Retail, office, mixed use, frontage landscapes, podium areas, planters, surfacin
 
 [Discuss a similar project](https://www.desertscapeco.com/contact)
 
-![Sports and Play](https://www.desertscapeco.com/assets/visual-sports-play-surfacing-construction.jpg)
+![Sports and Playgrounds](https://www.desertscapeco.com/assets/visual-sports-play-surfacing-construction.jpg)
 
-### Sports and Play
+### Sports and Playgrounds
 
 Sports fields, playgrounds, recreation areas, safety surfacing, equipment coordination, lighting, irrigation, inspection, and maintenance planning.
 

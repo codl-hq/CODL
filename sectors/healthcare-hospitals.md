@@ -52,7 +52,7 @@ Construction execution for softscape, hardscape, irrigation, lighting, water fea
 
 ### Operation and Maintenance
 
-Operation and maintenance plans that protect landscape value after handover through routine care, reporting, and performance management.
+Operation and maintenance plans that protect landscape value after handover through routine maintenance, reporting, and performance management.
 
 [Open page](https://www.desertscapeco.com/services/operations-maintenance)
 

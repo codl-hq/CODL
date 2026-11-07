@@ -70,7 +70,7 @@ Yes. Delivery can be planned around access, safety, sequencing, handover areas, 
 
 ### Can DesertScape maintain residential landscapes after construction?
 
-Yes. Residential and compound landscapes can be connected to routine care, irrigation tuning, plant health monitoring, reporting, and replacement planning.
+Yes. Residential and compound landscapes can be connected to routine maintenance, irrigation tuning, plant health monitoring, reporting, and replacement planning.
 
 ## Structured Data
 
@@ -118,7 +118,7 @@ Yes. Residential and compound landscapes can be connected to routine care, irrig
           "name": "Can DesertScape maintain residential landscapes after construction?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. Residential and compound landscapes can be connected to routine care, irrigation tuning, plant health monitoring, reporting, and replacement planning."
+            "text": "Yes. Residential and compound landscapes can be connected to routine maintenance, irrigation tuning, plant health monitoring, reporting, and replacement planning."
           }
         }
       ]

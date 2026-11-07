@@ -30,7 +30,7 @@ Survey and site assessment:
 Site review, measurements, access study, constraints mapping, utilities awareness, soil observations, existing asset inventory, and early delivery notes.
 
 Landscape design:
-Concept, schematic, detailed, and construction stage landscape design for refined outdoor environments in Saudi Arabia.
+Landscape architecture design services in Saudi Arabia, from site assessment and concept design to schematic design, detailed design, Issued for Construction (IFC) drawings and tender documents.
 
 Supply and procurement:
 Procurement support for plants, palms, trees, hardscape, irrigation, lighting, furniture, play, sports, and specialist landscape components.
@@ -39,11 +39,12 @@ Landscape construction:
 Construction execution for softscape, hardscape, irrigation, lighting, water features, civil works, infrastructure, and public realm assets.
 
 Operation and maintenance:
-Preventive and corrective maintenance plans that protect landscape value through routine care, reporting, and performance management.
+Preventive and corrective maintenance plans that protect landscape value through routine maintenance, reporting, and performance management.
 
 ## Focused landing pages
 
 Landscape contractor Riyadh:
+DesertScape Co is a Riyadh-based landscape contractor serving projects across Saudi Arabia. We deliver design, supply, construction, operation and maintenance for hardscape, softscape, irrigation, water features, landscape lighting, site furniture, and associated civil, MEP and infrastructure works.
 https://www.desertscapeco.com/services/landscape-contractor-riyadh
 
 Landscape design:
@@ -169,7 +170,7 @@ https://www.desertscapeco.com/data/service-areas.json
 
 ### Does DesertScape provide maintenance?
 
-Yes. The published scope includes preventive and corrective landscape operation and maintenance, routine care, reporting, and performance management.
+Yes. The published scope includes preventive and corrective landscape operation and maintenance, routine maintenance, reporting, and performance management.
 
 Evidence:
 https://www.desertscapeco.com/services/operations-maintenance

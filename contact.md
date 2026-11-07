@@ -66,7 +66,7 @@ Yes. Operation and maintenance can be planned as a standalone service or as part
 
 ### Can vendors register with DesertScape?
 
-Yes. Suppliers, subcontractors, nurseries, manufacturers, and specialist vendors can send a company profile, CR, VAT, catalogs, certificates, references, and contact details to the company email.
+Yes. Suppliers, subcontractors, nurseries, manufacturers and specialist vendors can register through our [Vendors form](https://www.desertscapeco.com/vendors). Project phone, WhatsApp and email contacts are reserved for landscape project inquiries.
 
 ## Structured Data
 

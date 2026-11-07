@@ -47,9 +47,29 @@ Disallow: /
 
 User-agent: ChatGPT-User
 Allow: /
+Disallow: /admin/
+Disallow: /internal/
+Disallow: /private/
+Disallow: /dashboard/
+Disallow: /account/
+Disallow: /login/
+Disallow: /wp-admin/
+Disallow: /.env
+Disallow: /.git/
+Disallow: /.vercel/
 
 User-agent: OAI-SearchBot
 Allow: /
+Disallow: /admin/
+Disallow: /internal/
+Disallow: /private/
+Disallow: /dashboard/
+Disallow: /account/
+Disallow: /login/
+Disallow: /wp-admin/
+Disallow: /.env
+Disallow: /.git/
+Disallow: /.vercel/
 
 User-agent: OAI-AdsBot
 Allow: /
@@ -62,9 +82,29 @@ Disallow: /
 
 User-agent: Claude-SearchBot
 Allow: /
+Disallow: /admin/
+Disallow: /internal/
+Disallow: /private/
+Disallow: /dashboard/
+Disallow: /account/
+Disallow: /login/
+Disallow: /wp-admin/
+Disallow: /.env
+Disallow: /.git/
+Disallow: /.vercel/
 
 User-agent: Claude-User
 Allow: /
+Disallow: /admin/
+Disallow: /internal/
+Disallow: /private/
+Disallow: /dashboard/
+Disallow: /account/
+Disallow: /login/
+Disallow: /wp-admin/
+Disallow: /.env
+Disallow: /.git/
+Disallow: /.vercel/
 
 User-agent: PerplexityBot
 Allow: /

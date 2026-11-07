@@ -15,7 +15,7 @@ Service
 
 # Operation and Maintenance
 
-Operation and maintenance plans that protect landscape value after handover through routine care, reporting, and performance management.
+Operation and maintenance plans that protect landscape value after handover through routine maintenance, reporting, and performance management.
 
 ![Operation and Maintenance](https://www.desertscapeco.com/assets/visual-operations-maintenance-riyadh.jpg)
 
@@ -113,7 +113,7 @@ Inspection, handover, and maintenance planning are tracked through agreed projec
     "url": "https://www.desertscapeco.com"
   },
   "areaServed": "Saudi Arabia",
-  "description": "Operation and maintenance plans that protect landscape value after handover through routine care, reporting, and performance management."
+  "description": "Operation and maintenance plans that protect landscape value after handover through routine maintenance, reporting, and performance management."
 }
 ```
 
