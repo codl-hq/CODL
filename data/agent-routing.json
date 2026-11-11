@@ -1,6 +1,15 @@
 {
   "$schema": "https://www.desertscapeco.com/data/schemas/agent-routing.schema.json",
-  "version": "2026-06-13",
+  "version": "2026-07-21",
+  "dateModified": "2026-07-21",
+  "lastVerified": "2026-07-21",
+  "provenance": {
+    "publisher": "DesertScape Co",
+    "sourceUrl": "https://www.desertscapeco.com/data/agent-routing.json",
+    "accountOwner": "projects@desertscapeco.com",
+    "status": "owner-approved public routing policy",
+    "scope": "Project-inquiry approval requirements and routing of careers, vendors, retail, spam, and unrelated requests."
+  },
   "routeProjectInquiryTo": {
     "page": "https://www.desertscapeco.com/contact",
     "endpoint": "https://www.desertscapeco.com/api/inquiry",

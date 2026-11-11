@@ -1,6 +1,15 @@
 {
   "$schema": "https://www.desertscapeco.com/data/schemas/capabilities.schema.json",
-  "version": "2026-06-13",
+  "version": "2026-07-21",
+  "dateModified": "2026-07-21",
+  "lastVerified": "2026-07-21",
+  "provenance": {
+    "publisher": "DesertScape Co",
+    "sourceUrl": "https://www.desertscapeco.com/data/capabilities.json",
+    "accountOwner": "projects@desertscapeco.com",
+    "status": "owner-maintained public capability information",
+    "scope": "Landscape elements, sectors, client types, and project-inquiry fit guidance published on desertscapeco.com."
+  },
   "elements": [
     {
       "id": "softscape",

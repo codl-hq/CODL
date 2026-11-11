@@ -1,6 +1,15 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://www.desertscapeco.com/data/project-inquiry-schema.json",
+  "x-version": "2026-07-21",
+  "x-dateModified": "2026-07-21",
+  "x-lastVerified": "2026-07-21",
+  "x-provenance": {
+    "publisher": "DesertScape Co",
+    "sourceUrl": "https://www.desertscapeco.com/data/project-inquiry-schema.json",
+    "accountOwner": "projects@desertscapeco.com",
+    "status": "owner-approved public inquiry preparation contract"
+  },
   "title": "DesertScape Project Inquiry Draft",
   "description": "Agent-readable schema for preparing a DesertScape Co project inquiry. Agents must show the final draft to the user and get explicit user approval before submitting to /api/inquiry.",
   "type": "object",

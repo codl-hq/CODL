@@ -1,6 +1,15 @@
 {
   "$schema": "https://www.desertscapeco.com/data/schemas/service-areas.schema.json",
-  "version": "2026-06-13",
+  "version": "2026-07-21",
+  "dateModified": "2026-07-21",
+  "lastVerified": "2026-07-21",
+  "provenance": {
+    "publisher": "DesertScape Co",
+    "sourceUrl": "https://www.desertscapeco.com/data/service-areas.json",
+    "accountOwner": "projects@desertscapeco.com",
+    "status": "owner-maintained public service-area information",
+    "scope": "Primary Saudi market, project-based Saudi coverage, and international search use cases."
+  },
   "primaryMarket": {
     "country": "Saudi Arabia",
     "countryCode": "SA",

@@ -1,7 +1,7 @@
 {
   "serverInfo": {
     "name": "DesertScape Co MCP SDK",
-    "version": "2026-06-13"
+    "version": "2026-08-31"
   },
   "transport": {
     "type": "streamable-http",
@@ -20,6 +20,23 @@
       "listChanged": false
     }
   },
+  "tools": [
+    "get_desertscape_overview",
+    "get_company_overview",
+    "list_desertscape_services",
+    "list_services",
+    "list_desertscape_capabilities",
+    "list_desertscape_service_areas",
+    "list_service_areas",
+    "match_desertscape_project_scope",
+    "match_project_scope",
+    "ask_desertscape_agent_concierge",
+    "ask_agent_concierge",
+    "prepare_desertscape_project_inquiry",
+    "prepare_project_inquiry",
+    "read_desertscape_public_resource",
+    "read_public_resource"
+  ],
   "contact": {
     "email": "projects@desertscapeco.com",
     "website": "https://www.desertscapeco.com/contact"
@@ -36,9 +53,9 @@
       "mimeType": "application/json"
     },
     {
-      "uri": "https://www.desertscapeco.com/index.md",
-      "name": "DesertScape markdown homepage",
-      "mimeType": "text/markdown"
+      "uri": "https://www.desertscapeco.com/data/service-areas.json",
+      "name": "DesertScape service-area data",
+      "mimeType": "application/json"
     },
     {
       "uri": "https://www.desertscapeco.com/data/capabilities.json",
@@ -51,8 +68,13 @@
       "mimeType": "application/schema+json"
     },
     {
-      "uri": "https://www.desertscapeco.com/data/agent-analytics-dashboard.json",
-      "name": "DesertScape agent analytics dashboard guidance",
+      "uri": "https://www.desertscapeco.com/data/agent-routing.json",
+      "name": "DesertScape agent routing rules",
+      "mimeType": "application/json"
+    },
+    {
+      "uri": "https://www.desertscapeco.com/data/agent-concierge.json",
+      "name": "DesertScape agent concierge knowledge and policy",
       "mimeType": "application/json"
     }
   ]

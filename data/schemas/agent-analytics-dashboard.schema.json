@@ -3,12 +3,15 @@
   "$id": "https://www.desertscapeco.com/data/schemas/agent-analytics-dashboard.schema.json",
   "title": "DesertScape Agent Analytics Dashboard Data",
   "type": "object",
-  "required": ["status", "trackedEvents", "publicEndpoints"],
+  "required": ["status", "dataContract", "trafficClasses", "trackedEvents", "organicDashboard", "aiReferralAttribution", "publicEndpoints"],
   "properties": {
     "$schema": { "type": "string", "format": "uri" },
     "version": { "type": "string" },
     "status": { "type": "string" },
     "privacy": { "type": "object" },
+    "provenance": { "type": "object" },
+    "dataContract": { "type": "object" },
+    "trafficClasses": { "type": "object" },
     "trackedEvents": {
       "type": "array",
       "items": { "type": "string" }
@@ -17,6 +20,9 @@
       "type": "array",
       "items": { "type": "object" }
     },
+    "organicDashboard": { "type": "object" },
+    "aiReferralAttribution": { "type": "object" },
+    "monthlyBenchmark": { "type": "object" },
     "recommendedQueries": {
       "type": "array",
       "items": { "type": "string" }
