@@ -504,13 +504,71 @@ function appendAdsAttribution(formData) {
   });
 }
 
+const formSubmissionIds = new WeakMap();
+const formSubmissionResetHandlers = new WeakSet();
+
+async function appendFormSubmissionId(form, formData) {
+  if (formData.get("submissionId")) return;
+  const browserCrypto = window.crypto;
+  if (!browserCrypto) return;
+  const createId = typeof browserCrypto.randomUUID === "function"
+    ? () => browserCrypto.randomUUID()
+    : typeof browserCrypto.getRandomValues === "function"
+      ? () => Array.from(browserCrypto.getRandomValues(new Uint8Array(16)), (byte) => byte.toString(16).padStart(2, "0")).join("")
+      : null;
+  if (!createId) return;
+  const fields = Array.from(formData.entries()).filter(([name]) =>
+    !["submissionId", "cf-turnstile-response", "g-recaptcha-response", "_page", "_language"].includes(name)
+    && !name.startsWith("_ads_")
+  );
+  if (!browserCrypto.subtle || typeof TextEncoder !== "function" || fields.some(([, value]) => typeof value !== "string")) {
+    formData.append("submissionId", createId());
+    return;
+  }
+  let state = formSubmissionIds.get(form);
+  if (!state) {
+    state = {};
+    formSubmissionIds.set(form, state);
+  }
+  if (!formSubmissionResetHandlers.has(form)) {
+    form.addEventListener("reset", () => {
+      const current = formSubmissionIds.get(form);
+      if (current) current.reset = true;
+      formSubmissionIds.delete(form);
+    });
+    formSubmissionResetHandlers.add(form);
+  }
+  // Serialize only fingerprinting; preserve the value order of repeated fields.
+  fields.sort((a, b) => a[0].localeCompare(b[0]));
+  const fingerprintInput = JSON.stringify({ endpoint: form.dataset.formEndpoint, fields });
+  const identify = async () => {
+    let fingerprint;
+    try {
+      const bytes = new TextEncoder().encode(fingerprintInput);
+      const digest = await browserCrypto.subtle.digest("SHA-256", bytes);
+      fingerprint = Array.from(new Uint8Array(digest), (byte) => byte.toString(16).padStart(2, "0")).join("");
+    } catch {
+      return createId();
+    }
+    if (state.reset) return createId();
+    if (state.fingerprint === fingerprint && state.id) return state.id;
+    const id = createId();
+    if (formSubmissionIds.get(form) === state) {
+      state.fingerprint = fingerprint;
+      state.id = id;
+    }
+    return id;
+  };
+  const pending = (state.pending || Promise.resolve()).then(identify, identify);
+  state.pending = pending;
+  formData.append("submissionId", await pending);
+}
+
 async function submitToFormBackend(form) {
   const endpoint = form.dataset.formEndpoint;
   if (!endpoint || typeof window.fetch !== "function") return { ok: false, error: "backend_unavailable" };
   const formData = new FormData(form);
-  if (!formData.get("submissionId") && window.crypto && typeof window.crypto.randomUUID === "function") {
-    formData.append("submissionId", window.crypto.randomUUID());
-  }
+  await appendFormSubmissionId(form, formData);
   appendAdsAttribution(formData);
   formData.append("_page", window.location.href);
   formData.append("_language", currentLanguage() || "en");
@@ -532,6 +590,7 @@ async function submitToFormBackend(form) {
   ) {
     return { ok: false, error: receipt?.error || "submission_rejected" };
   }
+  if (formSubmissionIds.get(form)?.id === formData.get("submissionId")) formSubmissionIds.delete(form);
   return { ok: true, receipt };
 }
 
